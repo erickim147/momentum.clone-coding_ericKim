@@ -1,0 +1,138 @@
+body {
+  background-color: #ecf0f1;
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.clicked {
+  color: #7f8c8d;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+/* css style  */
+
+.js-clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top-space {
+  width: 100%;
+  height: 200px;
+}
+
+.js-clock h1 {
+  font-size: 90px;
+  color: white;
+  margin: 0;
+}
+
+.js-clock h6 {
+  font-size: 40px;
+  color: white;
+  margin: 0;
+}
+
+.weather__com {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  color: white;
+  margin-right: 13px;
+  font-size: 15px;
+}
+
+.js-toDoForm input {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px white;
+  width: 250px;
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.js-toDoForm input:focus {
+  outline: none;
+  color: white;
+}
+
+.js-toDoForm input::placeholder {
+  color: white;
+  text-align: center;
+}
+
+.common {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greeting__size {
+  font-size: 25px;
+  color: white;
+}
+
+.js-form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px white;
+  width: 250px;
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.js-form input::placeholder {
+  color: white;
+  text-align: center;
+}
+
+.js-form input:focus {
+  outline: none;
+  color: white;
+}
+
+.js-weather__box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.span__margine {
+  color: white;
+  font-size: 20px;
+  margin-right: 13px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="weather-icons-master\css\weather-icons-wind.css"
+    />
+    <link
+      rel="stylesheet"
+      href="weather-icons-master\css\weather-icons-wind.min.css"
+    />
+    <link rel="stylesheet" href="weather-icons-master\css\weather-icons.css" />
+    <link
+      rel="stylesheet"
+      href="weather-icons-master\css\weather-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="top-space">
+      <div class="js-weather__box">
+        <span class="js-weather__icon span__margine"><i class="wi"></i></span>
+        <span class="js-weather__temp span__margine"></span>
+      </div>
+      <div class="js-weather__place weather__com"></div>
+    </div>
+    <!-- weather -->
+
+    <div class="js-clock">
+      <h6></h6>
+      <h1></h1>
+    </div>
+    <!-- clock time -->
+
+    <div class="common greeting__size">
+      <form class="js-form form">
+        <input type="text" placeholder="What is your name?" />
+      </form>
+      <h4 class="js-greetings greetings"></h4>
+    </div>
+    <!-- greeting -->
+
+    <div class="common">
+      <form class="js-toDoForm">
+        <input type="text" placeholder="write a to do" />
+      </form>
+    </div>
+    <div class="common">
+      <ul class="js-toDoList"></ul>
+    </div>
+    <!-- ToDos -->
+
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
