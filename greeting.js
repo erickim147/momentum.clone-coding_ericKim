@@ -24,7 +24,19 @@ function askForName() {
 function paintGreeting(text) {
   form.classList.remove(SHOWING_CN);
   greeting.classList.add(SHOWING_CN);
-  greeting.innerText = `Hello ${text}`;
+  const greeting_time = new Date();
+  const greeting_hours = greeting_time.getHours();
+  if (greeting_hours >= 6 && greeting_hours <= 12) {
+    greeting.innerText = `Good Morning. ${text}`;
+  } else if (greeting_hours >= 13 && greeting_hours <= 18) {
+    greeting.innerText = `Good Afternoon. ${text}`;
+  } else if (greeting_hours >= 19 && greeting_hours <= 21) {
+    greeting.innerText = `Good Evening. ${text}`;
+  } else if (greeting_hours >= 22 && greeting_hours <= 23) {
+    greeting.innerText = `Good Night. ${text}`;
+  } else if (greeting_hours >= 0 && greeting_hours <= 5) {
+    greeting.innerText = `Good Dreams. ${text}`;
+  }
 }
 
 function loadName() {

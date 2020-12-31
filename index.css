@@ -80,7 +80,6 @@ body {
 .js-toDoForm input {
   background-color: transparent;
   border: none;
-  border-bottom: solid 2px white;
   width: 250px;
   margin-top: 50px;
   font-size: 25px;
@@ -89,11 +88,18 @@ body {
 .js-toDoForm input:focus {
   outline: none;
   color: white;
+  text-align: center;
+  text-decoration: underline white;
 }
 
 .js-toDoForm input::placeholder {
-  color: white;
   text-align: center;
+  color: white;
+  text-decoration: underline white;
+}
+
+.js-toDoForm input:focus::-webkit-input-placeholder {
+  color: transparent;
 }
 
 .common {
@@ -103,14 +109,13 @@ body {
 }
 
 .greeting__size {
-  font-size: 25px;
+  font-size: 45px;
   color: white;
 }
 
 .js-form input {
   background-color: transparent;
   border: none;
-  border-bottom: solid 2px white;
   width: 250px;
   margin-top: 50px;
   font-size: 25px;
@@ -119,11 +124,18 @@ body {
 .js-form input::placeholder {
   color: white;
   text-align: center;
+  text-decoration: underline white;
 }
 
 .js-form input:focus {
   outline: none;
   color: white;
+  text-decoration: underline white;
+  text-align: center;
+}
+
+.js-form input:focus::-webkit-input-placeholder {
+  color: transparent;
 }
 
 .js-weather__box {
