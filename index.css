@@ -119,12 +119,15 @@ body {
   width: 250px;
   margin-top: 50px;
   font-size: 25px;
+  position: relative;
 }
 
 .js-form input::placeholder {
   color: white;
   text-align: center;
   text-decoration: underline white;
+  position: absolute;
+  bottom: -5px;
 }
 
 .js-form input:focus {
@@ -132,6 +135,8 @@ body {
   color: white;
   text-decoration: underline white;
   text-align: center;
+  text-underline-position: under;
+  text-decoration-style: solid 2px;
 }
 
 .js-form input:focus::-webkit-input-placeholder {
